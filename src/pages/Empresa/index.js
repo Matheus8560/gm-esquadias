@@ -56,33 +56,7 @@ export default function Empresa(){
 					</FlexboxGrid.Item>
 				</FlexboxGrid>
 			</FlexboxGrid>
-			<FlexboxGrid justify="center" style={{background: '#f7f7f7'}}>
-				<FlexboxGrid.Item componentClass={Col} colspan={24} md={20} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: 120}}>
-					<h2 style={{textAlign: 'center', fontSize: '2.5rem', color: '#565454', fontFamily: 'SegoeUI', fontWeight: 700}}> Clientes <span style={{color: '#004DBB'}}>100% Satisfeitos</span> </h2>
-				</FlexboxGrid.Item>
-			</FlexboxGrid>
-			<AwesomeSlider className="empresaCarrossel" animation="cubeAnimation" style={{height: '400px !important', marginTop: '80px !important'}} >
-				<div className="empresa_slider_1">
-					<FlexboxGrid justify="space-around" align="middle">
-						<FlexboxGrid.Item componentClass={Col} colspan={20} md={4}>
-							<img style={{width: '10rem', height: '10rem', borderRadius: '10rem', background: '#707070'}} />
-						</FlexboxGrid.Item>
-						<FlexboxGrid.Item componentClass={Col} colspan={20} md={14}>
-							<em style={{color: '#707070', fontFamily: 'Helvetica', fontSize: '1.2rem'}}>"É uma empresa de qualidade e muita eficácia. Sem palavras para o excelente trabalho desempenhado por eles na minha loja."</em>
-						</FlexboxGrid.Item>
-					</FlexboxGrid>
-				</div>
-				<div className="empresa_slider_1">
-					<FlexboxGrid justify="space-around" align="middle">
-						<FlexboxGrid.Item componentClass={Col} colspan={20} md={4}>
-							<img style={{width: '10rem', height: '10rem', borderRadius: '10rem', background: '#707070'}} />
-						</FlexboxGrid.Item>
-						<FlexboxGrid.Item componentClass={Col} colspan={20} md={14}>
-							<em style={{color: '#707070', fontFamily: 'Helvetica', fontSize: '1.2rem'}}>"É uma empresa de qualidade e muita eficácia. Sem palavras para o excelente trabalho desempenhado por eles na minha loja."</em>
-						</FlexboxGrid.Item>
-					</FlexboxGrid>
-				</div>
-			</AwesomeSlider>
+
 			<Footer/>
 		</>
 	);

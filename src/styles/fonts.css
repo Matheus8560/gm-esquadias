@@ -8,6 +8,10 @@
 	font-family: 'Helvetica';
 	src: local('Helvetica'), url(../assets/fonts/helvetica.ttf) format('ttf');
 }
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: local('HelveticaNeue') url(../assets/fonts/helvetica-neue.ttf) format('ttf');
+}
 
 body {
 	width: 100% !important;
@@ -99,7 +103,29 @@ h4 {
 	background: linear-gradient(20deg, rgba(0,73,183,1) 35%, rgba(0,153,255,1) 100%) !important;
 }
 .slider_1 {
-	background: url(../assets/images/slide_1.jpg) !important;
+	background: url(../assets/images/slide_1.png) !important;
+	background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+	width: 100% !important;
+	height: 100% !important;
+	display: flex !important;
+	justify-content: flex-start !important;
+	align-items: center !important;
+}
+.slider_2 {
+	background: url(../assets/images/slide_2.png) !important;
+	background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+	width: 100% !important;
+	height: 100% !important;
+	display: flex !important;
+	justify-content: flex-start !important;
+	align-items: center !important;
+}
+.slider_3 {
+	background: url(../assets/images/slide_3.png) !important;
 	background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
@@ -111,36 +137,23 @@ h4 {
 }
 
 .slider_1 div, .slider_2 div, .slider_3 div {
-	padding-left: 15% !important
-}
-.slider_2 {
-	background: url(../assets/images/slide_1.jpg) !important;
-	background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-	width: 100% !important;
-	height: 100% !important;
-	display: flex !important;
-	justify-content: flex-start !important;
-	align-items: center !important;
-}
-.slider_3 {
-	background: url(../assets/images/slide_1.jpg) !important;
-	background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-	width: 100% !important;
-	height: 100% !important;
-	display: flex !important;
-	justify-content: flex-start !important;
-	align-items: center !important;
+	padding: 15% !important
 }
 
 .slider_1 div h2, .slider_2 div h2, .slider_3 div h2 {
-	font-family: 'SegoeUI' !important;
+	font-family: 'Helvetica' !important;
 	color: #FFF !important ;
-	font-weight: 700 !important;
-	font-size: 3rem !important
+	font-weight: bold !important;
+	font-size: 3rem !important;
+	line-height: 3.5rem;
+}
+
+.slider_1 div p, .slider_2 div p, .slider_3 div p {
+	margin-top: 20px;
+	font-family: 'Roboto', sans-serif !important;
+	color: #FFF !important ;
+	font-weight: normal !important;
+	font-size: 1.2rem !important
 }
 
 .slider_1 div .btn-saiba-mais, .slider_2 div .btn-saiba-mais, .slider_3 div .btn-saiba-mais, .btn-enviar {
@@ -153,6 +166,20 @@ h4 {
 	color: #FFF !important ;
 	font-weight: 700 !important;
 	font-size: 1rem !important;
+}
+
+.card-porta-titulo{
+	font-family: 'SegoeUI' !important;
+	font-size: 50;
+	font-weight: normal;
+	color: #000000
+}
+
+.card-porta-descricao{
+	font-family: 'Helvetica' !important;
+	font-size: 20px;
+	font-weight: normal;
+	color: #3E3E3E
 }
 
 .homeCarrossel .awssld__bullets {
@@ -170,13 +197,13 @@ h4 {
 }
 
 .parallax {
-	background: url(../assets/images/servicos.png) !important;
+	background: url(../assets/images/background_servicos.jpg) !important;
 	background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
 }
 .parallaxEmpresa {
-	background: url(../assets/images/background-empresa.jpg) !important;
+	background: url(../assets/images/background-empresa.png) !important;
 	background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
@@ -195,14 +222,14 @@ h4 {
 }
 
 .btn-saiba-mais-portas {
-	margin-top: 40px !important;
+	margin: 40px 0 0 5px !important;
 	width: 100%;
 	height: 50px !important;
 	background: rgb(0,73,183);
 	background: linear-gradient(90deg, rgba(0,73,183,1) 35%, rgba(0,153,255,1) 100%) !important;
 	font-family: 'Roboto', sans-serif !important;
 	color: #FFF !important ;
-	font-weight: 700 !important;
+	font-weight: 500 !important;
 	font-size: 1rem !important;
 }
 

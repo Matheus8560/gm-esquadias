@@ -1,5 +1,5 @@
 export const ContainerEmpresa = {
-	background: 'url(../../assets/images/background-empresa.jpg) !important',
+	background: 'url(../../assets/images/background-empresa.png) !important',
 	backgroundSize: 'cover !important',
     backgroundPosition: 'center center !important',
 	backgroundRepeat: 'no-repeat !important',
