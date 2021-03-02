@@ -35,6 +35,7 @@ import {
 
 import iconInstalacao from '../../assets/images/servico_1.jpg'
 import iconManutencao from '../../assets/images/servico_2.jpg'
+import iconWhatsapp from '../../assets/images/wpp.png'
 import porta_1 from '../../assets/images/porta_1.jpg';
 import porta_2 from '../../assets/images/porta_2.jpg';
 import porta_3 from '../../assets/images/porta_3.jpg';
@@ -100,6 +101,11 @@ export default function Home() {
 							de nossos clientes. Damos assistência técnica 24 horas nas portas
 							automáticas com atendimento especializado.
 						</strong>
+						<div style={{marginTop: 10, textAlign: 'end', width: '100%'}}>
+							<Button className="Btn-flutuante-whats">
+								<img src={iconWhatsapp} style={{ width: '3rem', height: '3rem', marginRight: '2%'}} />
+							</Button>
+						</div>
 					</FlexboxGrid.Item >
 				</FlexboxGrid>
 			</Grid>
@@ -149,7 +155,7 @@ export default function Home() {
 							automáticas de enrolar são a solução perfeita para
 							todos os segmentos, trazendo segurança e facilidade.
 						</p>
-						<Button size="lg"  className="btn-saiba-mais-portas rs-col-xs-10 rs-col-md-6">Saiba mais</Button>
+						<Button size="lg" style={{width: '40%', borderRadius: '15px'}} className="btn-saiba-mais-portas rs-col-xs-10 rs-col-md-6">Saiba mais</Button>
 					</div>
 					<div style={CardPortaImg_1}>
 						<img src={porta_auto} style={{width: '100%'}}/>
@@ -166,10 +172,10 @@ export default function Home() {
 							elas são duráveis, podendo chegar a 3 metros
 							de largura.
 						</p>
-						<Button size="lg"  className="btn-saiba-mais-portas rs-col-xs-10 rs-col-md-6">Saiba mais</Button>
+						<Button size="lg" style={{width: '40%', borderRadius: '15px'}} className="btn-saiba-mais-portas rs-col-xs-10 rs-col-md-6">Saiba mais</Button>
 					</div>
 					<div style={CardPortaImg_2}>
-						<img src={porta_auto} style={{width: '100%'}}/>
+						<img src={porta_manual} style={{width: '100%'}}/>
 					</div>
 				</div>
 

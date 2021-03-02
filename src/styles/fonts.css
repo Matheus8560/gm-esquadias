@@ -220,11 +220,47 @@ h4 {
     background-position: center center !important;
     background-repeat: no-repeat !important;
 }
+.parallaxPortasAutomaticas {
+	background: url(../assets/images/automatica-titulo.png) !important;
+	background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+	margin-top: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+}
+.parallaxPortasManuais {
+	background: url(../assets/images/manual_titulo.png) !important;
+	background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+	margin-top: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+}
+.parallaxPortasManutencao {
+	background: url(../assets/images/manutencao_titulo.png) !important;
+	background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+	margin-top: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+}
 
 .btn-saiba-mais-portas {
 	margin: 40px 0 0 5px !important;
 	width: 100%;
-	height: 50px !important;
+	height: 60px !important;
 	background: rgb(0,73,183);
 	background: linear-gradient(90deg, rgba(0,73,183,1) 35%, rgba(0,153,255,1) 100%) !important;
 	font-family: 'Roboto', sans-serif !important;
