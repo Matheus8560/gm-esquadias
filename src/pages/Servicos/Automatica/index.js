@@ -61,16 +61,11 @@ export default function Servicos(){
 	}
 	return (
 		<>
-			<Header activeKey="portas" />
+			<Header activeKey="porta-auto" />
 
 			<div className='parallaxPortasAutomaticas'>
 				<h2 style={PaginaTitulo}>PORTAS AUTOMÁTICAS</h2>
 			</div>
-			{/* <FlexboxGrid justify="center" className="parallaxPortas" style={{paddingBottom: 100, paddingTop: 100, marginTop: '120px !important'}}>
-				<FlexboxGrid.Item componentClass={Col} colspan={24} md={20} style={{display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', marginTop: 80}}>
-					<h2 style={{textAlign: 'left', fontSize: '2.5rem', color: '#FFF', fontFamily: 'SegoeUI', fontWeight: 700}}>Nossas Portas</h2>
-				</FlexboxGrid.Item>
-			</FlexboxGrid> */}
 
 			<div style={ContainerCardPorta_2}>
 				<div style={ContentCardPorta}>
@@ -137,7 +132,7 @@ export default function Servicos(){
 				</div>
 			</div>
 
-			<div style={ContainerCardPorta_1}>
+			<div  style={ContainerCardPorta_1}>
 				<div style={ContentCardPorta}>
 					<div style={{width: '50%'}}>
 						<div style={CardPortaTitulo}>

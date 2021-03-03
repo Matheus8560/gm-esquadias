@@ -42,7 +42,7 @@ export default function Servicos(){
 	}
 	return (
 		<>
-			<Header activeKey="portas" />
+			<Header activeKey="manutencao" />
 
 			<div className='parallaxPortasManutencao'>
 				<h2 style={PaginaTitulo}>MANUTENÇÃO</h2>
@@ -86,10 +86,10 @@ export default function Servicos(){
 					<p style={CardContatoDescricao}>Aproveita e faça seu orçamento! Entre em contato.</p>
 
 					<div style={CardContatoBtns}>
-						<Button size="lg" style={BtnOrcamento}>
+						<Button size="lg" href="/contato" style={BtnOrcamento}>
 							Orçamento
 						</Button>
-						<Button size="lg" style={BtnWp}>
+						<Button size="lg" href="https://api.whatsapp.com/send?phone=5521990162015" style={BtnWp}>
 							Whatsapp
 						</Button>
 					</div>

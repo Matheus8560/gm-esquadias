@@ -9,31 +9,40 @@ export const ContainerHeader = {
 
 // Endereço
 
-export const ContainerLocalizacao = {
+export const ContainerFooterItem = {
 	display: 'flex',
-	alignItems: 'center',
-
+	flexDirection: 'row',
+	alignItems: 'flex-start',
+	margin: '1%',
+	width: '30%'
 }
 
-export const ContainerIconLocalizacao = {
+export const ContentFooter = {
+	display: 'flex',
+	flexDirection: 'row',
+	alignItems: 'flex-start',
+}
+
+export const FooterIcon = {
 	display: 'flex',
 	justifyContent: 'center',
-	alignItems: 'center',
+	alignItems: 'flex-start',
 	width: '4rem',
-	height: '4rem',
-	paddingTop: '0.5rem'
+	height: '100%',
+	// paddingTop: '0.5rem'
 }
 
-export const IconLocalizacao = {
+export const IconFooter = {
 	width: '2.5rem',
 	height: '2.5rem'
 }
 
-export const ContainerDescricaoLocalizacao = {
+export const FooterDescricao = {
 	display: 'flex',
 	flexDirection: 'column',
 	// alignItems: 'center',
-	justifyContent: 'flex-start !important'
+	justifyContent: 'flex-start !important',
+	color: '#FFFFFF'
 }
 // Telefone
 export const ContainerTelefone = {
@@ -60,8 +69,7 @@ export const ContainerDescricaoTelefone = {
 	flexDirection: 'column',
 	justifyContent: 'center',
 	alignItems: 'center',
-	height: '4rem',
-	paddingTop: '1rem'
+	// height: '4rem',
 }
 
 export const ContainerSocial = {
@@ -72,13 +80,28 @@ export const ContainerSocial = {
 }
 
 export const IconFacebook = {
-	width: '2.5rem',
-	height: '2.5rem',
-	cursor: 'pointer'
+	width: '3.5rem',
+	height: '3.5rem',
+	cursor: 'pointer',
+	marginRight: '1%'
 }
 
 export const IconInstagram = {
-	width: '2.5rem',
-	height: '2.5rem',
+	width: '3.5rem',
+	height: '3.5rem',
 	cursor: 'pointer'
+}
+
+export const BtnWhatsapp = {
+	background: 'rgb(37, 211, 102)',
+    height: '70px',
+    width: '70px',
+    position: 'fixed',
+	bottom: '40px',
+	right: '2%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+	borderRadius: '50%',
+	zIndex: 9999999999,
 }

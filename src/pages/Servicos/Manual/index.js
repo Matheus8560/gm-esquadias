@@ -39,7 +39,7 @@ export default function Servicos(){
 	}
 	return (
 		<>
-			<Header activeKey="portas" />
+			<Header activeKey="porta-manual" />
 
 			<div className='parallaxPortasManuais'>
 				<h2 style={PaginaTitulo}>PORTAS MANUAIS</h2>
