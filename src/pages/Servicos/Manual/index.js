@@ -5,6 +5,7 @@ import ImageGallery from 'react-image-gallery';
 import Loader from '../../../components/Loader';
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
+import { ImagesManual } from '../../../components/Galeries';
 
 import {
 	ContainerCardPorta_1,
@@ -20,10 +21,7 @@ import {
 	PaginaTitulo,
 } from '../Automatica/styles';
 
-import manual_f from '../../../assets/images/manual_f.png';
-import manual_f1 from '../../../assets/images/manual_f1.png';
-import manual_f2 from '../../../assets/images/manual_f2.png';
-import manual_f3 from '../../../assets/images/manual_f3.png';
+
 import manual_vasada from '../../../assets/images/manual_vasada.png';
 
 
@@ -61,12 +59,7 @@ export default function Servicos(){
 						</p>
 					</div>
 					<div style={CardPortaMultiImg}>
-						<img src={manual_f} style={ImgPrincipal}/>
-						<div style={SubImgs}>
-							<img src={manual_f1} style={ImgsSecundarias}/>
-							<img src={manual_f2} style={ImgsSecundarias}/>
-							<img src={manual_f3} style={ImgsSecundarias}/>
-						</div>
+						<ImageGallery items={ImagesManual} showFullscreenButton={false} showPlayButton={false} />
 					</div>
 				</div>
 			</div>

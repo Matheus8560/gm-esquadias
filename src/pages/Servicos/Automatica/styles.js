@@ -56,11 +56,10 @@ export const CardPortaImg = {
 }
 
 export const CardPortaMultiImg = {
-	display: 'flex',
-	flexDirection: 'column',
-	justifyContent: 'space-between',
 	width: '40%',
+	height: '40%',
 	maxWidth: '420px',
+	maxheight: '420px',
 	marginRight: '20px'
 }
 

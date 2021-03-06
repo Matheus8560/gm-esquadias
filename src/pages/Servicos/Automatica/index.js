@@ -5,6 +5,16 @@ import ImageGallery from 'react-image-gallery';
 import Loader from '../../../components/Loader';
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
+import {
+	ImagesAuto_1,
+	ImagesAuto_2,
+	ImagesAuto_3,
+	ImagesAuto_4,
+	ImagesAuto_5,
+	ImagesAuto_6,
+	ImagesAuto_7,
+	ImagesAuto_8,
+} from '../../../components/Galeries';
 
 import {
 	ContainerCardPorta_1,
@@ -22,32 +32,8 @@ import {
 	PaginaSubtitulo
 } from './styles';
 
-import auto_fechada from '../../../assets/images/auto_fechada.png';
-import autoF_1 from '../../../assets/images/portaF_1.png';
-import autoF_2 from '../../../assets/images/portaF_2.png';
-import autoF_3 from '../../../assets/images/portaF_3.png';
-import autoF_4 from '../../../assets/images/portaF_4.png';
 import auto_galv from '../../../assets/images/porta_galv.png';
 import porta_tv from '../../../assets/images/porta_tv.png';
-import porta_tv1 from '../../../assets/images/porta_tv1.png';
-import porta_tv2 from '../../../assets/images/porta_tv2.png';
-import porta_metade from '../../../assets/images/porta_metade.png';
-import porta_metade1 from '../../../assets/images/porta_metade1.png';
-import porta_metade2 from '../../../assets/images/porta_metade2.png';
-import porta_metade3 from '../../../assets/images/porta_metade3.png';
-import alcapao from '../../../assets/images/alcapao.png';
-import alcapao_1 from '../../../assets/images/alcapao_1.png';
-import cc from '../../../assets/images/cc.png';
-import cc_1 from '../../../assets/images/cc_1.png';
-import cc_2 from '../../../assets/images/cc_2.png';
-import nobreak from '../../../assets/images/nobreak.png';
-import NOBREAK_1 from '../../../assets/images/NOBREAK_1.png';
-import pintura from '../../../assets/images/pintura.png';
-import pintura_1 from '../../../assets/images/pintura_1.png';
-import portinhola_1 from '../../../assets/images/portinhola_1.png';
-import portinhola_2 from '../../../assets/images/portinhola_2.png';
-import portinhola_3 from '../../../assets/images/portinhola_3.png';
-import portinhola_4 from '../../../assets/images/portinhola_4.png';
 
 export default function Servicos(){
 	const [loading, setLoading] = useState(true);
@@ -82,13 +68,7 @@ export default function Servicos(){
 					</div>
 
 					<div style={CardPortaMultiImg}>
-						<img src={auto_fechada} style={ImgPrincipal}/>
-						<div style={SubImgs_4}>
-							<img src={autoF_1} style={{width: '22%'}}/>
-							<img src={autoF_2} style={{width: '22%'}}/>
-							<img src={autoF_3} style={{width: '22%'}}/>
-							<img src={autoF_4} style={{width: '22%'}}/>
-						</div>
+						<ImageGallery items={ImagesAuto_1} showFullscreenButton={false} showPlayButton={false} />
 					</div>
 				</div>
 			</div>
@@ -122,12 +102,8 @@ export default function Servicos(){
 							arejado mesmo com as portas fechadas.
 						</p>
 					</div>
-					<div style={CardPortaMultiImg}>
-						<img src={porta_tv} style={ImgPrincipal}/>
-						<div style={SubImgs}>
-							<img src={porta_tv1} style={ImgsSecundarias}/>
-							<img src={porta_tv2} style={ImgsSecundarias}/>
-						</div>
+					<div style={CardPortaImg}>
+						<img src={porta_tv} style={{width: '100%', maxWidth: '420px'}}/>
 					</div>
 				</div>
 			</div>
@@ -147,12 +123,7 @@ export default function Servicos(){
 						</p>
 					</div>
 					<div style={CardPortaMultiImg}>
-						<img src={porta_metade} style={ImgPrincipal}/>
-						<div style={SubImgs}>
-							<img src={porta_metade1} style={ImgsSecundarias}/>
-							<img src={porta_metade2} style={ImgsSecundarias}/>
-							<img src={porta_metade3} style={ImgsSecundarias}/>
-						</div>
+						<ImageGallery items={ImagesAuto_3} showFullscreenButton={false} showPlayButton={false} />
 					</div>
 				</div>
 			</div>
@@ -174,10 +145,7 @@ export default function Servicos(){
 						</p>
 					</div>
 					<div style={CardPortaMultiImg}>
-						<img src={alcapao} style={ImgPrincipal}/>
-						<div style={SubImgs}>
-							<img src={alcapao_1} style={ImgsSecundarias}/>
-						</div>
+						<ImageGallery items={ImagesAuto_4} showFullscreenButton={false} showPlayButton={false} />
 					</div>
 				</div>
 			</div>
@@ -195,11 +163,7 @@ export default function Servicos(){
 						</p>
 					</div>
 					<div style={CardPortaMultiImg}>
-						<img src={cc} style={ImgPrincipal}/>
-						<div style={SubImgs}>
-							<img src={cc_1} style={ImgsSecundarias}/>
-							<img src={cc_2} style={ImgsSecundarias}/>
-						</div>
+						<ImageGallery items={ImagesAuto_5} showFullscreenButton={false} showPlayButton={false} />
 					</div>
 				</div>
 			</div>
@@ -219,10 +183,7 @@ export default function Servicos(){
 						</p>
 					</div>
 					<div style={CardPortaMultiImg}>
-						<img src={nobreak} style={ImgPrincipal}/>
-						<div style={SubImgs}>
-							<img src={NOBREAK_1} style={ImgsSecundarias}/>
-						</div>
+						<ImageGallery items={ImagesAuto_6} showFullscreenButton={false} showPlayButton={false} />
 					</div>
 				</div>
 			</div>
@@ -245,10 +206,7 @@ export default function Servicos(){
 						</p>
 					</div>
 					<div style={CardPortaMultiImg}>
-						<img src={pintura} style={ImgPrincipal}/>
-						<div style={SubImgs}>
-							<img src={pintura_1} style={ImgsSecundarias}/>
-						</div>
+						<ImageGallery items={ImagesAuto_7} showFullscreenButton={false} showPlayButton={false} />
 					</div>
 				</div>
 			</div>
@@ -273,13 +231,7 @@ export default function Servicos(){
 						</p>
 					</div>
 					<div style={CardPortaMultiImg}>
-						<img src={auto_fechada} style={ImgPrincipal}/>
-						<div style={SubImgs_4}>
-							<img src={portinhola_1} style={{width: '22%'}}/>
-							<img src={portinhola_2} style={{width: '22%'}}/>
-							<img src={portinhola_3} style={{width: '22%'}}/>
-							<img src={portinhola_4} style={{width: '22%'}}/>
-						</div>
+						<ImageGallery items={ImagesAuto_8} showFullscreenButton={false} showPlayButton={false} />
 					</div>
 				</div>
 			</div>

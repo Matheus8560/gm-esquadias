@@ -18,8 +18,8 @@ export default function Servicos(){
 			thumbnail: porta_1
 		},
 		{
-			original: porta_1,
-			thumbnail: porta_1
+			original: porta_2,
+			thumbnail: porta_2
 		},
 		{
 			original: porta_1,

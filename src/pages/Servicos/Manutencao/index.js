@@ -5,6 +5,7 @@ import ImageGallery from 'react-image-gallery';
 import Loader from '../../../components/Loader';
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
+import { ImagesManutencao } from '../../../components/Galeries';
 
 import {
 	ContainerCardPorta_2,
@@ -24,11 +25,6 @@ import {
 	BtnOrcamento,
 	BtnWp
 } from '../Automatica/styles';
-
-import manutencao from '../../../assets/images/manutencao.png';
-import manutencao1 from '../../../assets/images/manutencao1.png';
-import manutencao2 from '../../../assets/images/manutencao2.png';
-import manutencao3 from '../../../assets/images/manutencao3.png';
 
 export default function Servicos(){
 	const [loading, setLoading] = useState(true);
@@ -70,12 +66,7 @@ export default function Servicos(){
 						</p>
 					</div>
 					<div style={CardPortaMultiImg}>
-						<img src={manutencao} style={ImgPrincipal}/>
-						<div style={SubImgs}>
-							<img src={manutencao1} style={ImgsSecundarias}/>
-							<img src={manutencao2} style={ImgsSecundarias}/>
-							<img src={manutencao3} style={ImgsSecundarias}/>
-						</div>
+						<ImageGallery items={ImagesManutencao} showFullscreenButton={false} showPlayButton={false} />
 					</div>
 				</div>
 			</div>
