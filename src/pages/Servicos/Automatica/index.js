@@ -125,7 +125,7 @@ export default function Servicos(){
 			</Grid>
 
 			<div className='parallaxPortasAutomaticas' style={{marginTop:'0'}}>
-				<h2 style={PaginaTitulo}>ACESSORIOS</h2>
+				<h2 style={PaginaTitulo}>ACESSÓRIOS</h2>
 				<h3 style={PaginaSubtitulo}>Podem ser inseridos em qualquer tipo de porta automática.</h3>
 			</div>
 
