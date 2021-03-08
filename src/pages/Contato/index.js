@@ -153,7 +153,7 @@ export default function Contato(){
 				</FlexboxGrid.Item>
 				<FlexboxGrid.Item componentClass={Col} colspan={20} md={10} style={{display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', paddingTop: 80, paddingBottom: 80}}>
 					<Iframe
-						url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.5497844193737!2d-43.228119885039256!3d-22.633281485151542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x990b308ec06f55%3A0x558e96948106e540!2sR.%20Batista%20de%20Oliveira%2C%205%20-%20quadra%2069%20-%20Rio%20Imbari%C3%AA%2C%20Duque%20de%20Caxias%20-%20RJ%2C%2025266-210!5e0!3m2!1spt-BR!2sbr!4v1609968654401!5m2!1spt-BR!2sbr"
+						url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.4785770714434!2d-43.230770585406994!3d-22.635938533952334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x990b36a5edfad9%3A0xdf6ed99a0e273404!2sR.%20Batista%20de%20Oliveira%2C%20195%20-%20lote%2005%2C%20QD%2069%20-%20Rio%20Imbari%C3%AA%2C%20Duque%20de%20Caxias%20-%20RJ%2C%2025266-210!5e0!3m2!1spt-BR!2sbr!4v1615214211121!5m2!1spt-BR!2sbr"
 						width="100%" height={533}
 					/>
 				</FlexboxGrid.Item>
