@@ -41,8 +41,7 @@ export const ContainerServicosParallax = {
 	backgroundSize: 'cover !important',
     backgroundPosition: 'center center !important',
 	backgroundRepeat: 'no-repeat !important',
-	paddingTop: '40px',
-	paddingBottom: '40px'
+	padding: '40px 5%'
 }
 
 export const ContainerHeaderServicosParallax = {
@@ -63,8 +62,7 @@ export const ContainerCardServicosParallax = {
 }
 
 export const CardServicosParallax = {
-	width: "35%",
-	height: '500px',
+	maxWidth: '500px',
 	display: 'flex',
 	flexDirection: 'column',
 	justifyContent: 'flex-start',
@@ -89,6 +87,7 @@ export const CardServicosImg = {
 
 export const ContainerCardDescricaoServicosParallax = {
 	width: '100%',
+	minHeight: '265px',
 	display: 'flex',
 	flexDirection: 'column',
 	justifyContent: 'flex-start',
@@ -98,7 +97,7 @@ export const ContainerCardDescricaoServicosParallax = {
 
 export const ContainerPortas = {
 	width: 'auto',
-	margin: '80px 60px 200px',
+	margin: '80px 5% 100px',
 	display: 'flex',
 	flexDirection: 'column',
 	justifyContent: 'center',
@@ -114,24 +113,18 @@ export const ContainerHeaderPortas = {
 	// flexDirection: 'column',
 	// justifyContent: 'center',
 	// alignItems: 'center'
-	fontSize: '50px',
+	textAlign: 'center',
+	fontSize: '2rem',
 	color: '#565454',
 	fontFamily: 'Helvetica',
 	fontWeight: 700,
-	marginBottom: '100px'
+	marginBottom: '50px'
 }
 
-export const ContainerGalleryPortas = {
-	width: '100%',
-	marginTop: 100,
-	display: 'flex',
-	justifyContent: 'space-between',
-	alignItems: 'center'
-}
 export const ContainerCardPorta_1 = {
 	// width: '30%',
 	display: 'flex',
-	flexDirection: 'row',
+	flexDirection: 'row-reverse',
 	justifyContent: 'space-between',
 	alignItems: 'left',
 	margin: '0 0 125px'
@@ -139,22 +132,9 @@ export const ContainerCardPorta_1 = {
 export const ContainerCardPorta_2 = {
 	// width: '30%',
 	display: 'flex',
-	flexDirection: 'row-reverse',
+	flexDirection: 'row',
 	justifyContent: 'space-between',
 	alignItems: 'left',
-}
-
-export const CardPortaDetalhe = {
-	width: '45%'
-}
-
-export const CardPortaImg_1 = {
-	width: '45%',
-	textAlign: 'end'
-}
-export const CardPortaImg_2 = {
-	width: '45%',
-	textAlign: 'start'
 }
 
 export const CardPortaDivisao = {
@@ -162,41 +142,6 @@ export const CardPortaDivisao = {
     width: '100%',
     height: '6px',
     background: 'linear-gradient(90deg, rgba(0,73,183,1) 35%, rgba(0,153,255,1) 100%)'
-}
-
-
-
-export const ContainerEmpresa = {
-	width: '100%',
-	height: 800,
-	display: 'flex',
-	flexDirection: 'column',
-	justifyContent: 'center',
-	alignItems: 'center',
-	paddingTop: '40px',
-	background: '#f6f8f8'
-}
-
-export const ContainerCardEmpresa = {
-	width: '100%',
-	display: 'flex',
-	justifyContent: 'space-between',
-	alignItems: 'center',
-	padding: '20px 5%'
-}
-
-export const CardEmpresa = {
-	width: '30%',
-	display: 'flex',
-	flexDirection: 'column',
-	justifyContent: 'space-between',
-	alignItems: 'center',
-	padding: '5%',
-	borderRadius: 15,
-	background: '#FFF',
-	marginTop: 80,
-	boxShadow: '1px 1px 3px 1px rgba(76,86,82, 0.4)',
-	height: 350
 }
 
 export const CardTrabalhos = {

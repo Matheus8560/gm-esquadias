@@ -1,5 +1,5 @@
 import auto_fechada from '../../assets/images/auto_fechada.png';
-import autoF_1 from '../../assets/images/portaF_1.jpg';
+import autoF_1 from '../../assets/images/portaF_1.png';
 import autoF_2 from '../../assets/images/portaF_2.png';
 import autoF_3 from '../../assets/images/portaF_3.png';
 import autoF_4 from '../../assets/images/portaF_4.png';
@@ -143,20 +143,12 @@ export const ImagesAuto_8 = [
 		thumbnail: auto_fechada
 	},
 	{
-		original: portinhola_1,
-		thumbnail: portinhola_1
-	},
-	{
 		original: portinhola_2,
 		thumbnail: portinhola_2
 	},
 	{
 		original: portinhola_3,
 		thumbnail: portinhola_3
-	},
-	{
-		original: portinhola_4,
-		thumbnail: portinhola_4
 	},
 ];
 

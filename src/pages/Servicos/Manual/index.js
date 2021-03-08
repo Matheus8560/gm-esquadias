@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Grid, Row, Col, FlexboxGrid  } from 'rsuite';
+import { Grid, Row, Col, FlexboxGrid  } from 'rsuite';
 import ImageGallery from 'react-image-gallery';
 
 import Loader from '../../../components/Loader';
@@ -13,11 +13,7 @@ import {
 	ContentCardPorta,
 	CardPortaTitulo,
 	CardPortaDescricao,
-	CardPortaImg,
-	CardPortaMultiImg,
-	ImgPrincipal,
-	ImgsSecundarias,
-	SubImgs,
+	DescricaoUltimoP,
 	PaginaTitulo,
 } from '../Automatica/styles';
 
@@ -43,42 +39,42 @@ export default function Servicos(){
 				<h2 style={PaginaTitulo}>PORTAS MANUAIS</h2>
 			</div>
 
-			<div style={ContainerCardPorta_2}>
-				<div style={ContentCardPorta}>
-					<div style={{width: '50%'}}>
+			<Grid style={ContainerCardPorta_2}>
+				<FlexboxGrid componentClass={Row} colspan={24} style={ContentCardPorta}>
+					<FlexboxGrid.Item componentClass={Col} colspan={24} md={8}>
+						<ImageGallery items={ImagesManual} showFullscreenButton={false} showPlayButton={false} />
+					</FlexboxGrid.Item>
+					<FlexboxGrid.Item componentClass={Col} colspan={24} md={15}>
 						<div style={CardPortaTitulo}>Porta manual fechada</div>
 						<p style={CardPortaDescricao}>
 							A porta manual, entretanto, consiste em um modelo mais simples,
 							que é fechado manualmente pelo proprietário ou
 							pessoas autorizadas.
 						</p>
-						<p style={CardPortaDescricao}>
+						<p style={DescricaoUltimoP}>
 							Então, a manutenção é ainda menos periódica, realizada apenas
 							para certificar o bom funcionamento dos mecanismos e renovação
 							estética, quando necessário.
 						</p>
-					</div>
-					<div style={CardPortaMultiImg}>
-						<ImageGallery items={ImagesManual} showFullscreenButton={false} showPlayButton={false} />
-					</div>
-				</div>
-			</div>
+					</FlexboxGrid.Item>
+				</FlexboxGrid>
+			</Grid>
 
-			<div style={ContainerCardPorta_1}>
-				<div style={ContentCardPorta}>
-					<div style={{width: '50%'}}>
+			<Grid style={ContainerCardPorta_1}>
+				<FlexboxGrid componentClass={Row} colspan={24} style={ContentCardPorta}>
+					<FlexboxGrid.Item componentClass={Col} colspan={24} md={8}>
+						<img src={manual_vasada} style={{width: '100%'}}/>
+					</FlexboxGrid.Item>
+					<FlexboxGrid.Item componentClass={Col} colspan={24} md={15}>
 						<div style={CardPortaTitulo}>Porta manual vasada</div>
-						<p style={CardPortaDescricao}>
+						<p style={DescricaoUltimoP}>
 							Quando o assunto é visibilidade e ventilação, essas portas são as
 							mais indicadas para acomodar produtos que necessitam dessas
 							qualidades.
 						</p>
-					</div>
-					<div style={CardPortaImg}>
-						<img src={manual_vasada} style={{width: '100%', maxWidth: '420px'}}/>
-					</div>
-				</div>
-			</div>
+					</FlexboxGrid.Item>
+				</FlexboxGrid>
+			</Grid>
 
 			<Footer />
 		</>

@@ -29,12 +29,58 @@ h4 {
 	font-size: 0.9rem !important
 }
 
+/* contato */
 .contato-descricao span {
 	color: #fff !important;
 	font-weight: normal;
 	font-family: 'SegoeUI' !important;
 	font-size: 0.8rem !important
+}
+.contato-tels{
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	font-family: 'SegoeUI' !important;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #FFF;
+	margin-top: 40px;
+}
+.contato-tels-icone img{
+	width: 2rem;
+	height: 2rem;
+}
+.contato-tels-numeros{
+	margin-left: 2%;
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+.contato-tels-numeros span:nth-child(2), .contato-tels-numeros span:nth-child(3){
+	border-left: 2px solid #FFF;
+	margin-left: 1%;
+	padding-left: 1%;
+}
+@media (max-width: 800px){
+	.contato-tels{
+		flex-direction: column;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+	.contato-tels-numeros{
+		flex-direction: column;
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	.contato-tels-numeros span:nth-child(2), .contato-tels-numeros span:nth-child(3){
+		border-left: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
+}
 
+.btn-contato{
+	margin: 12px
 }
 
 /* MENU */
@@ -84,7 +130,7 @@ h4 {
 
 .homeCarrossel {
 	height: 500px !important;
-	margin-top: 120px !important
+	margin-top: 100px !important
 }
 .empresaCarrossel {
 	height: 450px !important;
@@ -168,7 +214,7 @@ h4 {
 .slider_1 div .btn-saiba-mais, .slider_2 div .btn-saiba-mais, .slider_3 div .btn-saiba-mais, .btn-enviar {
 	margin-top: 40px !important;
 	/* width: 20%; */
-	height: 50px !important;
+	/* height: 50px !important; */
 	background: rgb(0,73,183);
 	background: linear-gradient(90deg, rgba(0,73,183,1) 35%, rgba(0,153,255,1) 100%) !important;
 	font-family: 'Roboto', sans-serif !important;
@@ -234,7 +280,7 @@ h4 {
 	background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
-	margin-top: 120px;
+	margin-top: 100px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -246,7 +292,7 @@ h4 {
 	background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
-	margin-top: 120px;
+	margin-top: 100px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -258,7 +304,7 @@ h4 {
 	background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
-	margin-top: 120px;
+	margin-top: 100px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -352,18 +398,26 @@ input { height: 45px !important}
 		margin-top: 30px !important
 	}
 }
-@media all and (max-width: 374px) {
+@media (max-width: 500px) {
 	.slider_1 div, .slider_2 div, .slider_3 div {
-		padding-left: 0px !important;
+		padding: 20px !important;
 	}
+	.slider_1 div h2, .slider_2 div h2, .slider_3 div h2 {
+		font-size: 2rem !important;
+	}
+	.slider_1 div p, .slider_2 div p, .slider_3 div p {
+		margin-top: 20px;
+		font-size: 1.2rem !important
+	}
+
 }
 
 @media all and (max-width: 767px) {
-	.rs-footer div:nth-child(1), .rs-footer div:nth-child(2) { margin-left: 0px !important }
+	/* .rs-footer div:nth-child(1), .rs-footer div:nth-child(2) { margin-left: 0px !important } */
 	.card-human, .card-lupa { margin-left: -30% !important}
 	.btn-saiba-mais-nossas-portas { width: 50% !important}
 	.nossas-portas-img { margin-bottom: 60px}
-	.description-contact {margin-left: 0px !important}
+	/* .description-contact {margin-left: 0px !important} */
 	.container-atendimento-24-orders :nth-child(4)::after {
 		content: '';
 		color: #707070;
@@ -402,3 +456,10 @@ input { height: 45px !important}
  .btn-wpp {
 	 text-decoration: none !important;
  }
+
+ @media (max-width: 991px){
+	.ultima-imagem{
+		display: none;
+	}
+ }
+

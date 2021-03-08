@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Grid, Row, Col, FlexboxGrid  } from 'rsuite';
 import AwesomeSlider from 'react-awesome-slider';
+import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import 'react-awesome-slider/dist/styles.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
@@ -11,10 +12,8 @@ import Footer from '../../components/Footer';
 
 import {
 	ContainerAtendimento24,
-	ContainerHeaderAtendimento24,
 	CardAtendimento24,
 	ContainerServicosParallax,
-	ContainerHeaderServicosParallax,
 	ContainerCardServicosParallax,
 	CardServicosImg,
 	CardServicosParallax,
@@ -22,22 +21,14 @@ import {
 	ContainerCardDescricaoServicosParallax,
 	ContainerPortas,
 	CardPortaDivisao,
-	CardPortaImg_1,
-	CardPortaImg_2,
-	CardPortaDetalhe,
 	ContainerHeaderPortas,
-	ContainerGalleryPortas,
 	ContainerCardPorta_1,
 	ContainerCardPorta_2,
-	ContainerEmpresa,
-	ContainerCardEmpresa,
-	CardEmpresa,
 	CardTrabalhos
 } from './styles';
 
 
 import iconInstalacao from '../../assets/images/servico_1.jpg'
-import iconWhatsapp from '../../assets/images/wpp.png'
 import iconManutencao from '../../assets/images/servico_2.jpg'
 import icon_lupa from '../../assets/images/icon_lupa.png'
 import icon_aviao from '../../assets/images/icon_aviao.png'
@@ -63,6 +54,8 @@ export default function Home() {
 	const [loading, setLoading] = useState(true);
 	const [active, setActive] = useState('home');
 
+	const AutoplaySlider = withAutoplay(AwesomeSlider);
+
 	const handleSelect = (activeKey) => {
 		setActive(activeKey);
 	}
@@ -78,7 +71,14 @@ export default function Home() {
 	return (
 		<>
 			<Header activeKey="home" />
-			<AwesomeSlider className="homeCarrossel" animation="cubeAnimation" style={{height: '400px !important', marginTop: '120px !important'}} >
+			<AutoplaySlider
+				play={true}
+				cancelOnInteraction={false} // should stop playing on user interaction
+				interval={6000}
+				className="homeCarrossel"
+				animation="cubeAnimation"
+				style={{height: '400px !important', marginTop: '120px !important'}}
+			>
 				<div className="slider_1">
 					<div>
 						<h2>Há mais de 17 anos no mercado de portas automáticas</h2>
@@ -102,7 +102,8 @@ export default function Home() {
 						<Button size="lg" href="/contato" className="btn-saiba-mais rs-col-xs-10 rs-col-md-6">Fale Conosco</Button>
 					</div>
 				</div>
-			</AwesomeSlider>
+			</AutoplaySlider>
+
 			{/* TENDIMENTO 24H */}
 			<Grid data-aos="fade-up" style={ContainerAtendimento24}>
 				<FlexboxGrid justify="center">
@@ -141,23 +142,7 @@ export default function Home() {
 
 				</FlexboxGrid>
 			</Grid>
-			{/* <Grid style={ContainerAtendimento24}>
-				<FlexboxGrid justify="center">
-					<FlexboxGrid.Item componentClass={Col} colspan={24} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: 40}}>
-						<h2 style={{textAlign: 'center', fontSize: '2.5rem', color: '#565454', fontFamily: 'SegoeUI', fontWeight: 700}}> Atendimento <span style={{color: '#004DBB'}}>24 Horas</span> </h2>
-						<strong style={{marginTop: 40, textAlign: 'center', fontSize: '1.4rem', color: '#6B6969', fontFamily: 'Roboto', fontWeight: 600}}>
-							Com o nosso maior diferencial, solucionamos os problemas inesperados
-							de nossos clientes. Damos assistência técnica 24 horas nas portas
-							automáticas com atendimento especializado.
-						</strong>
-						<div style={{marginTop: 10, textAlign: 'end', width: '100%'}}>
-							<Button className="Btn-flutuante-whats">
-								<img src={iconWhatsapp} style={{ width: '3rem', height: '3rem', marginRight: '2%'}} />
-							</Button>
-						</div>
-					</FlexboxGrid.Item >
-				</FlexboxGrid>
-			</Grid> */}
+
 			{/* NOSSOS SERVIÇOS */}
 			<Grid style={ContainerServicosParallax} className="parallax">
 				<FlexboxGrid justify="center">
@@ -190,14 +175,18 @@ export default function Home() {
 			</Grid>
 
 			{/* NOSSAS PORTAS */}
+			<Grid  style={ContainerPortas}>
+				<FlexboxGrid justify="center">
+					<FlexboxGrid.Item componentClass={Col} colspan={24} md={24}>
+						<h2 style={ContainerHeaderPortas}> Nossas <span style={{color: '#004DBB'}}>Portas</span> </h2>
+					</FlexboxGrid.Item>
+				</FlexboxGrid>
 
-			<div  style={ContainerPortas}>
-				<div>
-					<h2 style={ContainerHeaderPortas}> Nossas <span style={{color: '#004DBB'}}>Portas</span> </h2>
-				</div>
-
-				<div data-aos="fade-right" style={ContainerCardPorta_1}>
-					<div style={CardPortaDetalhe}>
+				<FlexboxGrid componentClass={Row} colspan={24} data-aos="fade-right" style={ContainerCardPorta_1}>
+					<FlexboxGrid.Item componentClass={Col} colspan={24} md={10} style={{ textAlign: 'end', marginBottom: '10px'}}>
+						<img src={porta_auto} style={{width: '100%'}}/>
+					</FlexboxGrid.Item>
+					<FlexboxGrid.Item componentClass={Col} colspan={24} md={12}>
 						<h2 className='card-porta-titulo'>Portas automáticas</h2>
 						<div style={CardPortaDivisao}/>
 						<p className='card-porta-descricao'>
@@ -206,14 +195,14 @@ export default function Home() {
 							todos os segmentos, trazendo segurança e facilidade.
 						</p>
 						<Button size="lg" href="/portas-automaticas" style={{width: '40%', borderRadius: '15px'}} className="btn-saiba-mais-portas rs-col-xs-10 rs-col-md-6">Saiba mais</Button>
-					</div>
-					<div style={CardPortaImg_1}>
-						<img src={porta_auto} style={{width: '100%'}}/>
-					</div>
-				</div>
+					</FlexboxGrid.Item>
+				</FlexboxGrid>
 
-				<div data-aos="fade-left" style={ContainerCardPorta_2}>
-					<div style={CardPortaDetalhe}>
+				<FlexboxGrid componentClass={Row} colspan={24} data-aos="fade-left" style={ContainerCardPorta_2}>
+					<FlexboxGrid.Item componentClass={Col} colspan={24} md={10} style={{ textAlign: 'start', marginBottom: '10px' }}>
+						<img src={porta_manual} style={{width: '100%'}}/>
+					</FlexboxGrid.Item>
+					<FlexboxGrid.Item componentClass={Col} colspan={24} md={12}>
 						<h2  className='card-porta-titulo'>Portas manuais</h2>
 						<div style={CardPortaDivisao}/>
 						<p className='card-porta-descricao'>
@@ -223,20 +212,17 @@ export default function Home() {
 							de largura.
 						</p>
 						<Button size="lg" href="/portas-manuais" style={{width: '40%', borderRadius: '15px'}} className="btn-saiba-mais-portas rs-col-xs-10 rs-col-md-6">Saiba mais</Button>
-					</div>
-					<div style={CardPortaImg_2}>
-						<img src={porta_manual} style={{width: '100%'}}/>
-					</div>
-				</div>
+					</FlexboxGrid.Item>
+				</FlexboxGrid>
 
-			</div>
+			</Grid>
 
 			{/* Nossos Trabalhos */}
-			<FlexboxGrid data-aos="fade-up" className="rs-hidden-xs rs-hidden-sm" justify="center" style={{...ContainerPortas, marginBottom: 150}}>
+			<FlexboxGrid data-aos="fade-up" className="rs-hidden-xs rs-hidden-sm" justify="center" style={{...ContainerPortas, marginBottom: '50px'}}>
 				<FlexboxGrid.Item componentClass={Col} colspan={24} md={20} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
 					<h2 style={ContainerHeaderPortas}> Alguns de Nossos <span style={{color: '#004DBB'}}>Trabalhos:</span> </h2>
 				</FlexboxGrid.Item>
-				<FlexboxGrid justify="space-around" align="middle" style={{paddingLeft: '5%', paddingRight: '5%'}}>
+				<FlexboxGrid justify="space-around" align="middle">
 					<FlexboxGrid.Item componentClass={Col} colspan={11} md={7} style={{marginBottom: 10}}>
 						<img src={porta_1} style={CardTrabalhos} />
 					</FlexboxGrid.Item>
@@ -262,7 +248,7 @@ export default function Home() {
 						<img src={porta_8} style={CardTrabalhos} />
 					</FlexboxGrid.Item>
 					<FlexboxGrid.Item componentClass={Col} colspan={11} md={7} style={{marginBottom: 10}}>
-						<img src={porta_9} style={CardTrabalhos} />
+						<img src={porta_9} className="ultima-imagem" style={CardTrabalhos} />
 					</FlexboxGrid.Item>
 				</FlexboxGrid>
 			</FlexboxGrid>

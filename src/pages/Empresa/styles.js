@@ -9,7 +9,7 @@ export const ContainerEmpresa = {
 export const CardEmpresa = {
 	display: 'flex',
 	flexDirection: 'column',
-	justifyContent: 'space-between',
+	justifyContent: 'space-around',
 	alignItems: 'center',
 	padding: '5%',
 	borderRadius: 15,

@@ -12,15 +12,10 @@ import {
 	ContentCardPorta,
 	CardPortaTitulo,
 	CardPortaDescricao,
-	CardPortaMultiImg,
-	ImgPrincipal,
-	ImgsSecundarias,
-	SubImgs,
+	DescricaoUltimoP,
 	PaginaTitulo,
 	ContainerCardPorta_1,
-	ContentCardContato,
 	CardContatoTitulo,
-	CardContatoBtns,
 	CardContatoDescricao,
 	BtnOrcamento,
 	BtnWp
@@ -44,9 +39,12 @@ export default function Servicos(){
 				<h2 style={PaginaTitulo}>MANUTENÇÃO</h2>
 			</div>
 
-			<div style={ContainerCardPorta_2}>
-				<div style={ContentCardPorta}>
-					<div style={{width: '50%'}}>
+			<Grid style={ContainerCardPorta_2}>
+				<FlexboxGrid componentClass={Row} colspan={24} style={ContentCardPorta}>
+					<FlexboxGrid.Item componentClass={Col} colspan={24} md={8}>
+						<ImageGallery items={ImagesManutencao} showFullscreenButton={false} showPlayButton={false} />
+					</FlexboxGrid.Item>
+					<FlexboxGrid.Item componentClass={Col} colspan={24} md={15}>
 						<div style={CardPortaTitulo}>Manutenção</div>
 						<p style={CardPortaDescricao}>
 							Dependendo do caso, a manutenção porta de enrolar pode ser
@@ -59,31 +57,35 @@ export default function Servicos(){
 							Dependendo do problema, a manutenção porta de enrolar pode
 							ser executada na mesma hora.
 						</p>
-						<p style={CardPortaDescricao}>
+						<p style={DescricaoUltimoP}>
 							Fique atento, caso sua porta exiba algum tipo de ação diferente do
 							comum ou uma deformidade física, agende um serviço de manutenção
 							porta de enrolar para um melhor funcionamento da sua porta.
 						</p>
-					</div>
-					<div style={CardPortaMultiImg}>
-						<ImageGallery items={ImagesManutencao} showFullscreenButton={false} showPlayButton={false} />
-					</div>
-				</div>
-			</div>
+					</FlexboxGrid.Item>
+				</FlexboxGrid>
+			</Grid>
 
 			<div style={ContainerCardPorta_1}>
-				<div style={ContentCardContato}>
+				<div style={{ alignItems: 'left' }}>
 					<div style={CardContatoTitulo}>Se interessou?</div>
 					<p style={CardContatoDescricao}>Aproveita e faça seu orçamento! Entre em contato.</p>
 
-					<div style={CardContatoBtns}>
-						<Button size="lg" href="/contato" style={BtnOrcamento}>
-							Orçamento
-						</Button>
-						<Button size="lg" href="https://api.whatsapp.com/send?phone=5521990162015" style={BtnWp}>
-							Whatsapp
-						</Button>
-					</div>
+					<Grid>
+						<Row>
+							<Col xs={24} md={6}>
+								<Button size="lg" style={BtnOrcamento} href="/contato">
+									Orçamento
+								</Button>
+							</Col>
+							<Col xs={24} md={6}>
+								<Button size="lg" style={BtnWp} appearance="ghost" onClick={() => window.location.href='https://api.whatsapp.com/send?phone=5521990162015'}>
+									Whatsapp
+								</Button>
+							</Col>
+						</Row>
+					</Grid>
+
 				</div>
 			</div>
 

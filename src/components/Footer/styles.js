@@ -1,26 +1,18 @@
 import { colors } from '../../styles/colors';
 
 export const ContainerHeader = {
-	// width: '100%',
 	background: colors.primary,
 	paddingTop: 40,
 	paddingBottom: 40
 }
 
-// Endereço
-
-export const ContainerFooterItem = {
-	display: 'flex',
-	flexDirection: 'row',
-	alignItems: 'flex-start',
-	margin: '1%',
-	width: '30%'
-}
-
 export const ContentFooter = {
 	display: 'flex',
 	flexDirection: 'row',
+	justifyContent: 'center',
 	alignItems: 'flex-start',
+	width: '80%',
+	margin: '30px'
 }
 
 export const FooterIcon = {
@@ -28,8 +20,6 @@ export const FooterIcon = {
 	justifyContent: 'center',
 	alignItems: 'flex-start',
 	width: '4rem',
-	height: '100%',
-	// paddingTop: '0.5rem'
 }
 
 export const IconFooter = {
@@ -40,36 +30,9 @@ export const IconFooter = {
 export const FooterDescricao = {
 	display: 'flex',
 	flexDirection: 'column',
-	// alignItems: 'center',
-	justifyContent: 'flex-start !important',
-	color: '#FFFFFF'
-}
-// Telefone
-export const ContainerTelefone = {
-	display: 'flex',
-	alignItems: 'center'
-}
-
-export const ContainerIconTelefone = {
-	display: 'flex',
-	justifyContent: 'center',
-	alignItems: 'center',
-	width: '4rem',
-	height: '4rem',
-	paddingTop: '0.5rem'
-}
-
-export const IconTelefone = {
-	width: '2rem',
-	height: '2rem'
-}
-
-export const ContainerDescricaoTelefone = {
-	display: 'flex',
-	flexDirection: 'column',
-	justifyContent: 'center',
-	alignItems: 'center',
-	// height: '4rem',
+	justifyContent: 'flex-center !important',
+	color: '#FFFFFF',
+	minWidth: '170px'
 }
 
 export const ContainerSocial = {

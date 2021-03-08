@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, Dropdown, Icon , Col } from 'rsuite';
+import { Nav, Dropdown } from 'rsuite';
 import { slide as Menu } from 'react-burger-menu';
 import {styles} from './styles'
 const NavComponent = ({ activeKey }) => {
