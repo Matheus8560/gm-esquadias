@@ -135,7 +135,7 @@ export default function Home() {
 							<FlexboxGrid.Item componentClass={Col} colspan={24} md={12} style={CardAtendimento24} className="card-human">
 								<img src={icon_config}  />
 								<h3 className="title-atendimento24" style={{color: '#00419F', fontFamily: 'Helvetica', fontSize: '1.5rem', fontWeight: 700}}>Recursos <img src={circle_tree} style={{width: '2rem', height: '2rem'}} /> </h3>
-								<span style={{fontSize: '1.2rem', color: '#565454', fontFamily: 'SegoeUI', fontWeight: 700,}}>Momento de Preparação dos recursos <br/> para a solucção solicitada.</span>
+								<span style={{fontSize: '1.2rem', color: '#565454', fontFamily: 'SegoeUI', fontWeight: 700,}}>Momento de Preparação dos recursos <br/> para a solução solicitada.</span>
 							</FlexboxGrid.Item>
 						</FlexboxGrid>
 					</FlexboxGrid.Item>
