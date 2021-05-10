@@ -31,7 +31,7 @@ OBS.: É necessário que o [`NPM & Node`](https://nodejs.org/en/) e o [`Git`](ht
 
 Com os itens cidados acima intalado, basta executas este comandodos em seu teminal:
 
-- `git clone https://github.com/raissaqueiroz/gm-webapp.git` 
+- `git clone https://github.com/Matheus8560/gm-esquadias.git` 
 - `cd gm-webapp` 
 - `npm install` 
 - `npm run build` 
